@@ -70,8 +70,7 @@ function checar() {
 }
 
 
-//funçao que reinicia o jogo aparecendo a mensagem que é a vez do X, ele que começa sempre um novo jogo
-
+//reseta o jogo e quando chama a função iniciar() ele libera as boxes pra click de novo.
 function reiniciar() {
     for(let i = 0; i < boxes.length; i++) {
         boxes[i].textContent = '' 
@@ -82,28 +81,8 @@ function reiniciar() {
 }
 
 
-/*
-//funçao que checa vitoria quando 3 boxes das combinacoes possiveis sao marcadas pelo mesmo jogador
-function checarVitoria(jogador) {
-    for (let i = 0; i < combinacoesVitoria.length; i++) {
-        const [a, b, c] = combinacoesVitoria[i];
-        if (boxes[a].textContent === jogador && boxes[b].textContent === jogador && boxes[c].textContent === jogador){
-            alert(`O jogador ${jogador} GANHOU!`)
-        }
-    }
-    
-}
-
-
-//funçao que checa se deu velha
-function checarVelha(jogador) {
-    for(let i = 0; i < boxes.length; i++){
-        if (boxes[i].textContent === ''){
-            alert('JOGUEM')
-        } else alert('DEU VELHA');
-    }
     
 };
 
 
-*/
+
